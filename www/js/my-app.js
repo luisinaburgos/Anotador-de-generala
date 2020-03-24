@@ -1,6 +1,9 @@
 //FALTA COMENTAR COMO JORACA ANDAN LAS COSAS
 // If we need to use custom DOM library, let's save it to $$ variable:
 var $$ = Dom7;
+    var nombrej1 = "";
+    var nombrej2 = ""; 
+    var datosAnteriores = [];
 
 var app = new Framework7({
     // App root element
@@ -31,9 +34,7 @@ var mainView = app.views.create('.view-main');
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
     //Variables globales
-    var nombrej1 = "";
-    var nombrej2 = ""; 
-    var datosAnteriores = [];
+
 });
 
 // Option 1. Using one 'page:init' handler for all pages
@@ -44,7 +45,7 @@ $$(document).on('page:init', function (e) {
 
 
 $$(document).on('page:init', '.page[data-name="index"]', function (e) {
-    $$('#iniciar').on('click', function(){
+    $$('#boton').on('click', function(){
         nombrej1 = $$('#j1_nombre').val();
         nombrej2 = $$('#j2_nombre').val();
         if (nombrej1 == "") {
@@ -270,6 +271,7 @@ function suma(jugador, cuanto, posicion){
     }
     $$('#j'+ jugador + '_' + posicion).text(cuanto);
     $$('#j'+ jugador + '_' + posicion).off('click');
+    $$('#j'+ jugador + '_' + posicion).removeClass('puntaje').addClass('puntaje2');
     datosAnteriores = [jugador, cuanto, posicion];
     sumaTotal(jugador);
 }

@@ -31,7 +31,7 @@
 <body>
     <div id="app">
         <!-- Statusbar overlay -->
-        <div class="statusbar"></div>
+        
     
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
@@ -39,26 +39,21 @@
             <div data-name="index" class="page">
     
                 <!-- Top Navbar -->
-                <div class="navbar">
-                    <div class="navbar-bg"></div>
-                    <div class="navbar-inner">
-                        
-                        <div class="title">Generala</div>
-                        
-                    </div>
-                </div>
+               
         
            
         
                 <!-- Scrollable page content -->
                 <div class="page-content">
+                    <div id="caja1">
+                    <img src="img/logo.png" id="logo1">
+                    </div>
                     
                     <form class="list form-store-data" id="my-form">
 					  <ul>
 					    <li>
 					      <div class="item-content item-input">
 					        <div class="item-inner">
-					          <div class="item-title item-label">Jugador 1</div>
 					          <div class="item-input-wrap">
 					            <input type="text" name="name" placeholder="Nombre Jugador 1" id="j1_nombre">
 					          </div>
@@ -68,7 +63,6 @@
 					    <li>
 					      <div class="item-content item-input">
 					        <div class="item-inner">
-					          <div class="item-title item-label">Jugador 2</div>
 					          <div class="item-input-wrap">
 					            <input type="text" name="name" placeholder="Nombre Jugador 2" id="j2_nombre">
 					          </div>
@@ -77,22 +71,27 @@
 						</li>
 					  </ul>
 					</form>
+
+                    <div id="caja2">
+                     <a href="/about/" class="empezar" ><img src="img/boton.png" id="boton"></a>
+                     <a href="/about/" data-view=".page-content">Ayuda</a>
+                    </div>
                     
-                     <button class="col button button-raised button-fill" id="iniciar" ><a href="/about/" class="empezar">EMPEZAR</a></button>
 
 
                     <!-- Link to another page -->
-                    <a href="/about/" data-view=".page-content">About app</a>
+                    
 
 
 
                   
                             
-                </div>
+                
             </div>
-                    
+             </div>       
         </div>
     </div>
+    
     
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.bundle.min.js"></script>
