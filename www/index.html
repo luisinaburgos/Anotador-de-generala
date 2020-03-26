@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -10,11 +11,13 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
 
     <!-- Required meta tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Color theme for statusbar -->
     <meta name="theme-color" content="#2196f3">
@@ -31,68 +34,84 @@
 <body>
     <div id="app">
         <!-- Statusbar overlay -->
-        
-    
+
+
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="index" class="page">
-    
+
                 <!-- Top Navbar -->
-               
-        
-           
-        
+
+
+
+
                 <!-- Scrollable page content -->
                 <div class="page-content">
                     <div id="caja1">
-                    <img src="img/logo.png" id="logo1">
+                        <img src="img/logo.png" id="logo1">
                     </div>
-                    
+
                     <form class="list form-store-data" id="my-form">
-					  <ul>
-					    <li>
-					      <div class="item-content item-input">
-					        <div class="item-inner">
-					          <div class="item-input-wrap">
-					            <input type="text" name="name" placeholder="Nombre Jugador 1" id="j1_nombre">
-					          </div>
-					        </div>
-					      </div>
-					    </li>
-					    <li>
-					      <div class="item-content item-input">
-					        <div class="item-inner">
-					          <div class="item-input-wrap">
-					            <input type="text" name="name" placeholder="Nombre Jugador 2" id="j2_nombre">
-					          </div>
-					        </div>
-					      </div>
-						</li>
-					  </ul>
-					</form>
+                        <ul>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-input-wrap">
+                                            <input type="text" name="name" placeholder="Nombre Jugador 1"
+                                                id="j1_nombre">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-input-wrap">
+                                            <input type="text" name="name" placeholder="Nombre Jugador 2"
+                                                id="j2_nombre">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
 
                     <div id="caja2">
-                     <a href="/about/" class="empezar" ><img src="img/boton.png" id="boton"></a>
-                     <a href="/about/" data-view=".page-content">Ayuda</a>
+                        <a href="/about/" class="empezar"><img src="img/boton.png" id="boton"></a>
+                        <a class="button popup-open ayuda-button" href="#" data-popup=".popup-ayuda">Ayuda
+                            <i class="f7-icons" id="info-icon">info_circle</i>
+                        </a>
                     </div>
                     
+                    <div class="popup popup-ayuda">
+                        <div class="block">
+                            <p class="cerrar" id="cerrar-bar">                                
+                                <i class="f7-icons" id="cerrar-icon" >arrow_down_to_line_alt</i>
+                            </p>
+                            <h3 class="text-align-center">Generala</h3>
+                            <p>La generala es un juego de dados. Se juega con cinco dados y un cubilete; el número de jugadores es ilimitado, pero lo ideal es de 3 a 5. El objetivo del juego es lograr la mayor puntuación, de acuerdo a la valoración establecida para cada jugada posible en el juego, llamada categoría.</p>
+                            <p>Existen 10 posibles categorías, por lo que cada jugador tendrá 11 tiros posibles en el juego. Cada tirada consiste en el lanzamiento de los cinco dados,1​ y según sean los números que salgan se podrá optar a una categoría; si no se logra alcanzar una categoría satisfactoria en el primer lanzamiento se pueden apartar los dados útiles y tomar los demás y tirarlos de nuevo; en esta segunda tirada se pueden apartar otra vez los más convenientes y juntarlos con los que ya tenía apartados, y luego se tirará el resto por tercera y última vez, con lo que termina la tirada. Si en un solo tiro se logró una categoría, a esto se lo llama «tiro servido» (sólo se aplicará para los juegos mayores; ver más adelante). </p>
+                            <p class="text-align-center">Para mas info visite <a href="https://es.wikipedia.org/wiki/Generala">https://es.wikipedia.org/wiki/Generala</a></p>
+                        </div>
+                    </div>
+
 
 
                     <!-- Link to another page -->
-                    
 
 
 
-                  
-                            
-                
+
+
+
+
+                </div>
             </div>
-             </div>       
         </div>
     </div>
-    
-    
+
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.bundle.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>

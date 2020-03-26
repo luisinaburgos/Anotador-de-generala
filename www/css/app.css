@@ -9,7 +9,8 @@
 }
 
 .empezar{
-	color: white;
+    color: white;
+    margin-bottom: 0;
 }
 .page {
  background: rgb(0,158,105);
@@ -153,4 +154,16 @@ background: radial-gradient(circle, rgba(0,158,105,1) 0%, rgba(0,87,87,1) 100%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.ayuda-button{
+    margin-top: 3vh;    
+    color: black;
+}
+#info-icon{
+    margin-top: 1vh;
+}
+#cerrar-bar{
+    display: block;
+    border-bottom: 1px black double;
+    text-align: center;
 }

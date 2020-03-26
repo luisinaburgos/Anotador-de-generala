@@ -27,7 +27,13 @@ var app = new Framework7({
   });
 
 
-
+//pop up ayuda
+var swipeToClosePopup = app.popup.create({
+    el: '.popup-ayuda',
+    swipeToClose: true,
+    swipeHandler: '.cerrar',
+  });
+  
 var mainView = app.views.create('.view-main');
 
 // Handle Cordova Device Ready Event
