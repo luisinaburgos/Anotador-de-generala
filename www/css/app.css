@@ -1,169 +1,177 @@
 /* Your app custom styles here */
-.contenedor{
-	margin:0 3%;
-	text-align: center;
-}
 
-.row{
-	height: 5vh;
-}
-
-.empezar{
-    color: white;
-    margin-bottom: 0;
-}
-.page {
- background: rgb(0,158,105);
-background: radial-gradient(circle, rgba(0,158,105,1) 0%, rgba(0,87,87,1) 100%);    
-}
-
-#logo1 {
-	margin: 10% 0 0 0;
-}
-
-#caja1 {
-	display: flex;
-	justify-content: center;
-}
-
-.list .item-content  {
-	border-color: #fcac01;
-	border-style: solid;
-	border-width: 5px;
-	margin: 5% 0;
-	background-color: white;
-}
-.total {
-	color: #fcac01;
-	font-size: 24px;
-}
-
-.navbar .title {
-		color: white;
-	font-size: 24px;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-
-}
-
-.list ul {
-	background: none;
-	width: 80%;
-}
-
-.list {
-	display: flex;
-	justify-content: center;
-}
-
-#caja2 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#boton {
-	width: 40%;
-	margin: 0 30% ;
-	padding: auto;
-}
-
-.puntaje {
-	background-color: black;
-	color: white;
-	font-size: 20px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 6vh;
-}
-
-.puntaje2 {
-	background-color: #980006;
-	color: white;
-	font-size: 20px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 6vh;
+.contenedor {
+    margin: 0 3%;
+    text-align: center;
 }
 
 .row {
-	border-bottom: 2px solid white;
-	height: 6vh;
+    height: 5vh;
+}
+
+.empezar {
+    color: white;
+    margin-bottom: 0;
+}
+
+.page {
+    background: rgb(0, 158, 105);
+    background: radial-gradient(circle, rgba(0, 158, 105, 1) 0%, rgba(0, 87, 87, 1) 100%);
+}
+
+#logo1 {
+    margin: 10% 0 0 0;
+}
+
+#caja1 {
+    display: flex;
+    justify-content: center;
+}
+
+.list .item-content {
+    border-color: #fcac01;
+    border-style: solid;
+    border-width: 5px;
+    margin: 5% 0;
+    background-color: white;
+}
+
+.total {
+    color: #fcac01;
+    font-size: 24px;
+}
+
+.navbar .title {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list ul {
+    background: none;
+    width: 80%;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+#caja2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton {
+    width: 40%;
+    margin: 0 30%;
+    padding: auto;
+}
+
+.puntaje {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+}
+
+.puntaje2 {
+    background-color: #980006;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+}
+
+.row {
+    border-bottom: 2px solid white;
+    height: 6vh;
 }
 
 .juego {
-	
-	display: flex;
-	align-items: center;
-	border-right: 2px solid white;
-	height: 6vh;
-	color: white;
-	font-size: 16px;
-	font-weight: 200;
-	
+    display: flex;
+    align-items: center;
+    border-right: 2px solid white;
+    height: 6vh;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
 }
 
 .nombre {
-	justify-content: center;
-		text-align: center;
-	display: flex;
-	align-items: center;
-	height: 6vh;
-	color: white;
-	font-size: 16px;
-	font-weight: 200;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
 }
 
 .toolbar {
-	background-color: black;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 0 5%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
 .navbar-inner {
-	background-color: black;
-	padding-right: 5%;
+    background-color: black;
+    padding-right: 5%;
 }
 
-#deshacer, #reiniciar, #ayuda{
-	font-size: 30px;
-	color: #fcac01;
+#deshacer, #reiniciar, #ayuda {
+    font-size: 30px;
+    color: #fcac01;
 }
 
 #label {
-	font-size: 10px;
-	color: #fcac01;
-	margin: 0;
-	padding: 0;
-
+    font-size: 10px;
+    color: #fcac01;
+    margin: 0;
+    padding: 0;
 }
 
 .md .icon-back:after {
-		font-size: 24px;
-	color: #fcac01;
+    font-size: 24px;
+    color: #fcac01;
 }
 
 .undo {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.ayuda-button{
-    margin-top: 3vh;    
+
+.ayuda-button {
+    margin-top: 3vh;
     color: black;
 }
-#info-icon{
+
+#info-icon {
     margin-top: 1vh;
 }
-#cerrar-bar{
+
+#cerrar-bar {
     display: block;
-    border-bottom: 1px black double;
+    border-bottom: 1px double white;
     text-align: center;
+}
+
+.popup-ayuda {
+    background: rgb(0, 158, 105);
+    background: radial-gradient(circle, rgba(0, 158, 105, 1) 0%, rgba(0, 87, 87, 1) 100%);
+    color: white;
 }
